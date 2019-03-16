@@ -1,8 +1,12 @@
 # HackatonBDC
 
-Allo pour vérifier que tout fonctionne rajouter une petite ligne ici
-- Francis
-- PA
-- Alexandre
-- raph
-- Laura
+Idea prototype for Micro-survey platform. The idea was to generate micro-surveys
+based on targeted user data from the sponsor's API.
+
+Alexandre Julien
+Francis Boudreau
+Pierre Antoine Vaillancourt
+Laura Bégin
+Raphael Guillemin
+
+https://github.com/francisboudreau7/HackatonBDC
