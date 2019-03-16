@@ -1,8 +1,6 @@
 html {
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  box-shadow: 0px 0px 0px 1px #0C1210;
-  margin-top:8px;
   color: #0C1210;
   
 }
@@ -16,7 +14,7 @@ head {
 }
 body {
   text-align: center;
-  
+  margin: 0;
 
 }
 
@@ -36,6 +34,7 @@ nav {
   background-image: url(logo.jpg);
   background-repeat: no-repeat;
   background-size : 15%;
+  min-height : 50px;
   padding: 25px;
   margin-left:50px;
   background-position: left;
@@ -46,12 +45,7 @@ main {
   text-align: center;
 }
 
-h1 {
-  font-size: 200%;
-  margin: 0;
-  padding: 25px;
-  color: #f6f0f3;
-}
+
 
 form {
   padding: 200px;
@@ -78,5 +72,5 @@ footer{
   font-style: italic;
   font-size: 115%;
   padding:10px;
-  color:#f6f0f3;
+  color:#888888;
 }

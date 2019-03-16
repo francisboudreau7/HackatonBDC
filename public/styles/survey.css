@@ -1,0 +1,39 @@
+#bouton2{
+  color: black;
+  padding: 10px;
+  margin-top:10px;
+  margin-bottom: 200px;
+  border: 10px;
+  padding: 10px;
+  border-radius:2px; 
+}
+
+#bouton2:hover {
+  color:#395C67;
+}
+
+#form2 {
+  padding: 10px;
+  margin-left:25%;
+  margin-right:25%;
+  width:50%;
+  box-shadow: 0px 0px 0px 1px #0C1210;
+  margin-bottom:200px;
+  height:350px;
+}
+
+#newQuestion {
+  padding: 10px;
+}
+
+h1 {
+  font-size: 200%;
+  margin: 0;
+  padding: 25px;
+  color: #0C1210;
+  background-color: #FAFAFA
+}
+
+#survey {
+  color: #0C1210;
+}

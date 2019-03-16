@@ -4,22 +4,22 @@
 <!-- Head -->
 <% include ./partials/_head %>
 
-<body>
+<body id="survey">
     <!-- Header -->
     <% include ./partials/_header %>
     <!-- Main -->
     <div>
-        <form method="POST" action="/surveys/new">
+        <form id="form2" method="POST" action="/surveys/new">
             <% for (let i = 0; i < data.length; i++) { %>
                 <p><%= data[i].qText %></p>
-                <div>
+                <div id="newQuestion">
                     <% for (let j = 0; j < data[i].answers.length; j++) { %>
-                        <input type="radio" id="<%= j %>" name="<%=data[i].id%>" value="<%= data[i].answers[j] %>">
+                        <input required="required" type="radio" id="<%= j %>" name="<%=data[i].id%>" value="<%= data[i].answers[j] %>">
                         <label for="<%= j %>"><%= data[i].answers[j] %></label>
                     <% } %>
                 </div>
             <% } %>
-            <input type="submit" value="Submit">
+            <input id="bouton2" type="submit" value="Soumettre">
         </form>
     </div>
     <!-- Footer -->
