@@ -1,44 +1,64 @@
-/* @import "index.css";
+@import "index.css";
 @import "survey.css";
 
 html {
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   box-shadow: 0px 0px 0px 1px #0C1210;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-width: 1300px;
   margin-top:8px;
   color: #0C1210;
+  
 }
 
-header {
+head {
+  text-align: center;
+}
+#image{
+  background-image:url(bg-masthead.jpg);
+  background-size: 100%;
+}
+body {
+  text-align: center;
+  
+
+}
+
+button {
+  padding: 20px;
+}
+
+
+nav {
+  text-align: left;
+  font-size: 80%;
 }
 
 main {
   font-size:200%;
   text-align: center;
-  background-color: #EEEEEE;
 }
 
 h1 {
   font-size: 200%;
   margin: 0;
   padding: 25px;
+  color: #f6f0f3;
 }
 
 form {
-  padding: 50px;
+  padding: 200px;
 }
 
 #bouton {
-  background-color:#DDDDDD;
+  background-color:rgba(200, 200, 200, 0.6);
   font-size: 200%;
   border: 25px;
   padding: 50px;
   border-radius:30px;
-  font-weight: bold;
+}
+
+input{
+  color:#f6f0f3;
 }
 
 input:hover {
@@ -49,6 +69,6 @@ input:hover {
 footer{
   font-style: italic;
   font-size: 115%;
+  padding:10px;
+  color:#f6f0f3;
 }
-
- */
