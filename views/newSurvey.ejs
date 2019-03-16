@@ -9,8 +9,17 @@
     <% include ./partials/_header %>
     <!-- Main -->
     <div>
+        <% console.log(data[0].qText) %>
         <form method="POST" action="/surveys/new">
-            <input type="text" name="TEST" value="TEST" placeholder="TEST">
+            <% for (let i = 0; i < data.length; i++) { %>
+                <p><%= data[i].qText %></p>
+                <div>
+                    <% for (let j = 0; j < data[i].answers.length; j++) { %>
+                        <input type="radio" id="<%= j %>" name="data[<%=i%>].answers" value="<%= data[i].answers[j] %>">
+                        <label for="<%= j %>"><%= data[i].answers[j] %></label>
+                    <% } %>
+                </div>
+            <% } %>
             <input type="submit" value="Submit">
         </form>
     </div>
