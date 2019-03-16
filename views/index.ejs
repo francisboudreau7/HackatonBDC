@@ -7,16 +7,12 @@
 		<link rel="stylesheet" href="/public/styles/main.css" />
 	</head>
 	<body>
-		<header>
-			<p>Générateur de sondage</p>
-		</header>
+		<% include ./partials/_header %>
 		<main>
 			<form method="GET" action="/surveys/new">
-				<input id="bouton" type="submit" value="submit"></input>
+				<input id="bouton" type="submit" value="New"></input>
 			</form>
 		</main>
-		<footer>
-			<p>&copy;Team #21</p>
-		</footer>
+		<% include ./partials/_footer %>
 	</body>
 </html>
