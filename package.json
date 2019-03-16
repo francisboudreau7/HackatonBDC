@@ -1,0 +1,24 @@
+{
+  "name": "hackatonbdc",
+  "version": "1.0.0",
+  "description": "Allo pour vérifier que tout fonctionne rajouter une petite ligne ici - Francis - Alexandre",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francisboudreau7/HackatonBDC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/francisboudreau7/HackatonBDC/issues"
+  },
+  "homepage": "https://github.com/francisboudreau7/HackatonBDC#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}
