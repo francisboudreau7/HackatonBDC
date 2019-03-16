@@ -8,7 +8,39 @@ const PORT = 8080;
 
 // Bootleg database global variable
 app.locals.data = {
-    surveys: []
+    surveys: [],
+    questions: {
+        "presale":{
+          "firstContact":[
+            {qText:"Avez-vous obtenu l'information que vous cherchiez?",answers:["Oui","Non"]},
+            {qText:"Que préférez-vous à propos de notre concessionnaire?",answers:["Service","Prix","Proximité"]},
+            {qText:"Q'est-ce qui détermine votre choix d'un concessionnaire?",answers:["Service","Prix","Proximité"]}
+          ],
+          "webOrigin":[
+            {qText:"Notre site-web est-il facile d'utilisation?",answers:["Oui","Non"]},
+            {qText:"Avez-vous réussi à obtenir un rendez-vous?",answers:["Oui","Non"]}
+          ],
+        },
+        "sale":{
+          "completed":[
+            {qText:"Êtes-vous satisfaits du prix payé pour votre véhicule?",answers:["Oui","Non"]},
+          {qText:"Votre vendeur vous a-t-il bien conseillé?",answers:["Oui","Non"]}
+        ],
+          "aborted":[
+            {qText:"Prévoyez-vous acheter votre véhicule d'un autre fabriquant?",answers:["Oui","Non"]},
+          {qText:"Votre vendeur vous a-t-il offert un bon prix?",answers:["Oui","Non"]}
+        ],
+        },
+        "postsale":{
+          "vehiculeAppreciation":[
+            {qText:"Aimez-vous la couleur de votre véhicule?",answers:["Oui","Non"]},
+            {qText:"Votre véhicule est-il assez spacieux?",answers:["Oui","Non"]}
+          ],
+          "futureLeads":[
+            {qText:"Quelle voiture acheteriez-vous comme prochain véhicule?",answers:["Sedan","Vus","Sport","Minifourgonnette"]},
+            {qText:"Ferez-vous l'entretien de votre véhicule chez nous?",answers:["Certainement", "Probablement", "Probablement pas","Certainement pas"]}],
+        }
+      }
 };
 
 // Server routes
