@@ -1,25 +1,31 @@
-@import "index.css";
+/* @import "index.css";
 @import "survey.css";
 
 html {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0px 0px 0px 1px #0C1210;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: 1300px;
+  margin-top:8px;
+  color: #0C1210;
 }
 
 header {
-  color: #768699;
-  border-bottom: 1px ridge #111111;
 }
 
 main {
   font-size:200%;
   text-align: center;
-  border-bottom: 1px ridge #111111;
   background-color: #EEEEEE;
 }
 
 h1 {
   font-size: 200%;
+  margin: 0;
+  padding: 25px;
 }
 
 form {
@@ -36,7 +42,7 @@ form {
 }
 
 input:hover {
-  color: #768699;
+  color: #395C67;
   text-decoration: none;
 }
 
@@ -45,4 +51,4 @@ footer{
   font-size: 115%;
 }
 
-
+ */
