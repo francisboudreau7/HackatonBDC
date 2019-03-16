@@ -1,0 +1,82 @@
+html {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  box-shadow: 0px 0px 0px 1px #0C1210;
+  margin-top:8px;
+  color: #0C1210;
+  
+}
+
+head {
+  text-align: center;
+}
+#image{
+  background-image:url(bg-masthead.jpg);
+  background-size: 100%;
+}
+body {
+  text-align: center;
+  
+
+}
+
+button {
+  padding: 20px;
+}
+
+nav a {
+  font-size: 150%;
+  color:#f6f0f3;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav {
+  text-align: right;
+  background-image: url(logo.jpg);
+  background-repeat: no-repeat;
+  background-size : 15%;
+  padding: 25px;
+  margin-left:50px;
+  background-position: left;
+}
+
+main {
+  font-size:200%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 200%;
+  margin: 0;
+  padding: 25px;
+  color: #f6f0f3;
+}
+
+form {
+  padding: 200px;
+}
+
+#bouton {
+  background-color:rgba(200, 200, 200, 0.6);
+  font-size: 200%;
+  border: 25px;
+  padding: 50px;
+  border-radius:30px;
+}
+
+input{
+  color:#f6f0f3;
+}
+
+input:hover {
+  color: #395C67;
+  text-decoration: none;
+}
+
+footer{
+  font-style: italic;
+  font-size: 115%;
+  padding:10px;
+  color:#f6f0f3;
+}
