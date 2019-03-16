@@ -18,7 +18,7 @@ router.get('/completed', function (req, res) {
 });
 
 router.post('/new', function (req, res) {
-    console.log(req.body);
+    //console.log(req.body);
     req.app.locals.data.surveys.push(req.body);
 
     res.setHeader('Content-Type', 'text/html');
