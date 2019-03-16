@@ -12,40 +12,41 @@ app.locals.data = {
     questions: {
         "presale":{
           "firstContact":[
-            {qText:"Avez-vous obtenu l'information que vous cherchiez?",answers:["Oui","Non"]},
-            {qtext:"Que préférez-vous à propos de notre concessionnaire?",answers:["Service","Prix","Proximité"]},
-            {qText:"Q'est-ce qui détermine votre choix d'un concessionnaire?",answers:["Service","Prix","Proximité"]}
+            {id: 0, qText:"Avez-vous obtenu l'information que vous cherchiez?", answers:["Oui","Non"]},
+            {id: 1, qText:"Que préférez-vous à propos de notre concessionnaire?", answers:["Service","Prix","Proximité"]},
+            {id: 2, qText:"Q'est-ce qui détermine votre choix d'un concessionnaire?", answers:["Service","Prix","Proximité"]}
           ],
           "webOrigin":[
-            {qtext:"Notre site-web est-il facile d'utilisation?",answers:["Oui","Non"]},
-            {qtext:"Avez-vous réussi à obtenir un rendez-vous?",answers:["Oui","Non"]}
+            { id: 3, qText:"Notre site-web est-il facile d'utilisation?",answers:["Oui","Non"]},
+            { id: 4, qText:"Avez-vous réussi à obtenir un rendez-vous?",answers:["Oui","Non"]}
           ],
         },
         "sale":{
           "completed":[
-            {qtext:"Êtes-vous satisfaits du prix payé pour votre véhicule?",answers:["Oui","Non"]},
-          {qtext:"Votre vendeur vous a-t-il bien conseillé?",answers:["Oui","Non"]}
+            { id: 5, qText:"Êtes-vous satisfaits du prix payé pour votre véhicule?",answers:["Oui","Non"]},
+            { id: 6, qText:"Votre vendeur vous a-t-il bien conseillé?",answers:["Oui","Non"]}
         ],
           "aborted":[
-            {qtext:"Prévoyez-vous acheter votre véhicule d'un autre fabriquant?",answers:["Oui","Non"]},
-          {qtext:"Votre vendeur vous a-t-il offert un bon prix?",answers:["Oui","Non"]}
+            { id: 7, qText:"Prévoyez-vous acheter votre véhicule d'un autre fabriquant?",answers:["Oui","Non"]},
+            { id: 8, qText:"Votre vendeur vous a-t-il offert un bon prix?",answers:["Oui","Non"]}
         ],
         },
         "postsale":{
           "vehiculeAppreciation":[
-            {qtext:"Aimez-vous la couleur de votre véhicule?",answers:["Oui","Non"]},
-            {qtext:"Votre véhicule est-il assez spacieux?",answers:["Oui","Non"]}
+            { id: 9, qText:"Aimez-vous la couleur de votre véhicule?",answers:["Oui","Non"]},
+            { id: 10, qText:"Votre véhicule est-il assez spacieux?",answers:["Oui","Non"]}
           ],
           "futureLeads":[
-            {qtext:"Quelle voiture acheteriez-vous comme prochain véhicule?",answers:["Sedan","Vus","Sport","Minifourgonnette"]},
-            {qtext:"Ferez-vous l'entretien de votre véhicule chez nous?",answers:["Certainement", "Probablement", "Probablement pas","Certainement pas"]}],
+            { id: 11, qText:"Quelle voiture acheteriez-vous comme prochain véhicule?",answers:["Sedan","Vus","Sport","Minifourgonnette"]},
+            { id: 12, qText:"Ferez-vous l'entretien de votre véhicule chez nous?",answers:["Certainement", "Probablement", "Probablement pas","Certainement pas"]}],
         }
       }
 };
 
 // Server routes
 const indexRoute = require("./routes/index");
-const surveysRoute = require("./routes/surveys")
+const surveysRoute = require("./routes/surveys");
+const analyticsRoute = require("./routes/analytics");
 
 // Set ejs as view engine and place assets
 app.set("view engine", "ejs");
