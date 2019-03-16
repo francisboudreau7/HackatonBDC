@@ -1,18 +1,12 @@
 <!DOCTYPE HTML>
 <html>
 
-<head>
-    <title>New Survey</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="/public/styles/main.css" />
-</head>
+<!-- Head -->
+<% include ./partials/_head %>
 
 <body>
     <!-- Header -->
-    <header>
-        Header
-    </header>
+    <% include ./partials/_header %>
     <!-- Main -->
     <div>
         <form method="POST" action="/surveys/new">
@@ -21,9 +15,7 @@
         </form>
     </div>
     <!-- Footer -->
-    <footer>
-        Footer
-    </footer>
+    <% include ./partials/_footer %>
 </body>
 
 </html>
