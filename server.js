@@ -6,11 +6,10 @@ const app = express();
 const bodyParser = require("body-parser")
 const PORT = 8080;
 
-// Bootleg database global variable
-app.locals.data = [];
 
 // Server routes
 const indexRoute = require("./routes/index");
+const surveyRoute = require("./routes/survey")
 
 // Set ejs as view engine and place assets
 app.set("view engine", "ejs");
@@ -24,6 +23,7 @@ app.use(bodyParser.json())
 
 // Connect routes
 app.use("/", indexRoute);
+app.use("/survey", surveyRoute)
 
 // Listening on port
 app.listen(PORT, () => {
